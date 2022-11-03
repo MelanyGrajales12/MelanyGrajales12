@@ -1,0 +1,122 @@
+/* footer */
+:root {
+    --background-color-blue: #051C48;
+    --background-color-orange: #FE6B0C;
+    --color-font-white: #FFFFFF;
+    --font-size-23: 23px;
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px
+}
+
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+
+footer {
+    display: flex;
+    background-color: var(--color-font-white);
+    justify-content: space-between;
+    height: 112px;
+    padding: 0 24px;
+    color: var(--background-color-blue);
+    border-bottom: 1px solid var(--very-light-pink);
+    align-items: center;
+}
+
+.foter-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+    align-items: flex-start;
+}
+
+.foter-container-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px
+}
+
+.foter-container-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px
+}
+
+.foter-container-right ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green)
+}
+
+.navbar-shopping-cart--footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 0;
+}
+
+.foter-container-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px
+}
+
+.foter-container-left {
+    display: flex
+}
+
+.foter-container-left ul {
+    margin-left: 12px
+}
+
+.foter-container-left ul li {
+    margin: 0 10px
+}
+
+.foter-container-left ul li p {
+    font-size: 15px;
+}
+
+.images-footer img {
+    margin-right: 15px;
+}
+.img-footer-2{
+    /* max-width: 165px; */
+    /* width: 100%; */
+    height: auto;
+}
+
+@media(max-width:1173px) {
+    footer{
+    justify-content: center;
+    }
+    .footer-tablet {
+        display: flex;
+    }
+
+    .foter-container-left {
+        display: none !important;
+    }
+}
+
+@media(max-width:513px) {
+    footer {
+        display: none;
+    }
+}
